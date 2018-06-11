@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace MinisBack.Data.Model
 {
@@ -12,7 +13,7 @@ namespace MinisBack.Data.Model
         {
             OrderItems = new HashSet<OrderItemEntity>();
         }
-
+        [Key]
         public int Id { get; set; }
         public float Price { get; set; }
         public bool Paid { get; set; }

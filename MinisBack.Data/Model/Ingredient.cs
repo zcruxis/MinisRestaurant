@@ -9,6 +9,7 @@ namespace MinisBack.Data.Model
 {
     public class Ingredient
     {
+        [Key]
         public int Id { get; set; }
         [StringLength(255)]
         public string Name { get; set; }

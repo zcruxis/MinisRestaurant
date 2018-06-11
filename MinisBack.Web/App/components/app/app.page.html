@@ -1,0 +1,48 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                Minis Restaurant
+            </a>
+            <ul class="nav navbar-nav" id="mobile-nav">
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="glyphicon glyphicon-list-alt"></span> Admin
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="Sandwiches.html">Sandwiches</a>
+                        </li>
+                        <li>
+                            <a href="Ingredients.html">Ingredients</a>
+                        </li>
+                        <li>
+                            <a href="Order_Report.html">Most Ordered</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a data-toggle="" class="" ui-sref="cashier" ui-sref-active="active">
+                        <span class="glyphicon glyphicon-th"></span> Cashier</b>
+                    </a>
+                </li>
+                <li class="">
+                    <a ui-sref="customerMenu" ui-sref-active="active">
+                        <span class="glyphicon glyphicon-wrench"></span> Customer</b>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav user_menu pull-right">
+                <li class="">
+                    <a href="#" class="" data-toggle="">
+                        <img src="img/user_avatar.png" alt="" class="user_avatar"> Customer</b>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+   <ui-view></ui-view>
+</div>

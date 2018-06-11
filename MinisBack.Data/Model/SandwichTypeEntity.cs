@@ -10,10 +10,12 @@ namespace MinisBack.Data.Model
 {
     public class SandwichTypeEntity
     {
+        [Key]
         public int Id { get; set; }
         [StringLength(255)]
         public string Name { get; set; }
         public SandwichCutType Cut { get; set; }
         public SandwichSalsaType Salsa { get; set; }
+        public bool Compressed { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace MinisBack.Data
     {
         public MinisBackContext() : base("MinisContext")
         {
+            this.Configuration.AutoDetectChangesEnabled = false;
         }
 
         public DbSet<OrderEntity> Orders { get; set; }
