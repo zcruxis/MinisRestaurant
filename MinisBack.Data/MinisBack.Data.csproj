@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201806110548339_RenameQuantityFieldInOrderItemEntity.Designer.cs">
       <DependentUpon>201806110548339_RenameQuantityFieldInOrderItemEntity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806111732346_AttributeOrderItemUpdate.cs" />
+    <Compile Include="Migrations\201806111732346_AttributeOrderItemUpdate.Designer.cs">
+      <DependentUpon>201806111732346_AttributeOrderItemUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MinisBackContext.cs" />
     <Compile Include="Model\DTO\MachineCommand.cs" />
@@ -88,6 +92,12 @@
     <EmbeddedResource Include="Migrations\201806110548339_RenameQuantityFieldInOrderItemEntity.resx">
       <DependentUpon>201806110548339_RenameQuantityFieldInOrderItemEntity.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806111732346_AttributeOrderItemUpdate.resx">
+      <DependentUpon>201806111732346_AttributeOrderItemUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

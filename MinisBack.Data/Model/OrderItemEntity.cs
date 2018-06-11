@@ -17,6 +17,9 @@ namespace MinisBack.Data.Model
         public float SandwichPrice { get; set; }
         public float TotalPrice { get; set; }
         public int OrderId { get; set; }
+        public String Cut { get; set; }        
+        public bool Compressed { get; set; }
+        public string Contents { get; set; }
 
         [ForeignKey("OrderId")]
         public OrderEntity Order { get; set; }
